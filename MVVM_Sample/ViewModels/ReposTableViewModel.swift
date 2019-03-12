@@ -9,17 +9,16 @@
 import Foundation
 import MVVM_Networking
 
-class RepoTableViewModel {
-    private let networking = Networking()
+class ReposTableViewModel {
     private var repos: Repos?
 
-	var count: Int {
+	var numberOfRows: Int {
 		return repos?.items.count ?? 0
 	}
 
     func getMostPopularRepos(language: String,
                              completion: (() -> Void)?) {
-        networking.performNetworkTask(endpoint: GitHubAPI.repositories(language: language),
+        Networking.performNetworkTask(endpoint: GitHubAPI.repositories(language: language),
                                       type: Repos.self) { [weak self] (response) in
                                         self?.repos = response
                                         completion?()

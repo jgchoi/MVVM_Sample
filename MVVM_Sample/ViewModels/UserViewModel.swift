@@ -10,13 +10,10 @@ import Foundation
 import MVVM_Networking
 
 class UserViewModel {
-
-    private let networking = Networking()
-
     private var user: User?
 
     func user(login: String, completion: (() -> Void)?) {
-        networking.performNetworkTask(endpoint: GitHubAPI.user(login: login), type: User.self) { [weak self] (response) in
+        Networking.performNetworkTask(endpoint: GitHubAPI.user(login: login), type: User.self) { [weak self] (response) in
             self?.user = response
             completion?()
         }

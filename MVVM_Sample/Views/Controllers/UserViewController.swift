@@ -16,7 +16,7 @@ class UserViewController: UIViewController {
     
     private let viewModel = UserViewModel()
 
-    public var userLogin: String?
+    var userLogin: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()

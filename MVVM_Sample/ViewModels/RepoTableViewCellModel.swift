@@ -1,5 +1,5 @@
 //
-//  RepoTableViewCellModel.swift
+//  ReposTableViewCellModel
 //  MVVM_Sample
 //
 //  Created by Jung Geon Choi on 2019-03-12.
@@ -9,6 +9,7 @@
 import Foundation
 
 class RepoTableViewCellModel {
+
     private let repo: Repo
 
     init(repo: Repo) {

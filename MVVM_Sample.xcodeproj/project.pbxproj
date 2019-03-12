@@ -15,7 +15,7 @@
 		4E7168A32238273400D6C43E /* Library_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E71689C2238273400D6C43E /* Library_iOS.framework */; };
 		4E7168A42238273400D6C43E /* Library_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E71689C2238273400D6C43E /* Library_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E7168BA2238286600D6C43E /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168B92238286600D6C43E /* ReposTableViewController.swift */; };
-		4E7168BE223829AC00D6C43E /* RepoTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168BB223829AC00D6C43E /* RepoTableViewModel.swift */; };
+		4E7168BE223829AC00D6C43E /* ReposTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168BB223829AC00D6C43E /* ReposTableViewModel.swift */; };
 		4E7168BF223829AC00D6C43E /* RepoTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168BC223829AC00D6C43E /* RepoTableViewCellModel.swift */; };
 		4E7168C0223829AC00D6C43E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168BD223829AC00D6C43E /* UserViewModel.swift */; };
 		4E7168C2223829BA00D6C43E /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168C1223829BA00D6C43E /* RepoTableViewCell.swift */; };
@@ -27,6 +27,7 @@
 		4E7168D0223829D000D6C43E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168CD223829D000D6C43E /* Networking.swift */; };
 		4E7168D222382A3100D6C43E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168D122382A3000D6C43E /* UserViewController.swift */; };
 		4E7168D422382AB300D6C43E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168C5223829C200D6C43E /* Response.swift */; };
+		4E7168D62238370400D6C43E /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7168D52238370400D6C43E /* UIColor+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 		4E71689C2238273400D6C43E /* Library_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Library_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E71689F2238273400D6C43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7168B92238286600D6C43E /* ReposTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
-		4E7168BB223829AC00D6C43E /* RepoTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewModel.swift; sourceTree = "<group>"; };
+		4E7168BB223829AC00D6C43E /* ReposTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposTableViewModel.swift; sourceTree = "<group>"; };
 		4E7168BC223829AC00D6C43E /* RepoTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCellModel.swift; sourceTree = "<group>"; };
 		4E7168BD223829AC00D6C43E /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		4E7168C1223829BA00D6C43E /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		4E7168CC223829D000D6C43E /* EndpointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		4E7168CD223829D000D6C43E /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		4E7168D122382A3000D6C43E /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4E7168D52238370400D6C43E /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4E71689F2238273400D6C43E /* Info.plist */,
+				4E7168D52238370400D6C43E /* UIColor+Theme.swift */,
 			);
 			path = Library_iOS;
 			sourceTree = "<group>";
@@ -188,7 +191,7 @@
 		4E7168AA2238275500D6C43E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4E7168BB223829AC00D6C43E /* RepoTableViewModel.swift */,
+				4E7168BB223829AC00D6C43E /* ReposTableViewModel.swift */,
 				4E7168BC223829AC00D6C43E /* RepoTableViewCellModel.swift */,
 				4E7168BD223829AC00D6C43E /* UserViewModel.swift */,
 			);
@@ -323,6 +326,7 @@
 					};
 					4E71689B2238273400D6C43E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -381,7 +385,7 @@
 				4E7168BA2238286600D6C43E /* ReposTableViewController.swift in Sources */,
 				4E7168BF223829AC00D6C43E /* RepoTableViewCellModel.swift in Sources */,
 				4E7168D222382A3100D6C43E /* UserViewController.swift in Sources */,
-				4E7168BE223829AC00D6C43E /* RepoTableViewModel.swift in Sources */,
+				4E7168BE223829AC00D6C43E /* ReposTableViewModel.swift in Sources */,
 				4E7168C0223829AC00D6C43E /* UserViewModel.swift in Sources */,
 				4E7168742238270500D6C43E /* AppDelegate.swift in Sources */,
 				4E7168C2223829BA00D6C43E /* RepoTableViewCell.swift in Sources */,
@@ -405,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7168D62238370400D6C43E /* UIColor+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +655,7 @@
 		4E7168A62238273400D6C43E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -668,6 +674,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junggeonchoi.Library-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -678,6 +685,7 @@
 		4E7168A72238273400D6C43E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

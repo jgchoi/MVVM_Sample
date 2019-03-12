@@ -9,14 +9,11 @@
 import Foundation
 
 public struct Networking {
-	public init() {}
-    public func performNetworkTask<T: Codable>(endpoint: GitHubAPI,
-                                        type: T.Type,
-                                        completion: ((_ response: T) -> Void)?) {
+    public static func performNetworkTask<T: Codable>(endpoint: GitHubAPI, type: T.Type, completion: ((_ response: T) -> Void)?) {
         let urlString = endpoint.baseURL.appendingPathComponent(endpoint.path).absoluteString.removingPercentEncoding
         guard let urlRequest = URL(string: urlString ?? "") else { return }
 
-        let urlSession = URLSession.shared.dataTask(with: urlRequest) { (data, urlResponse, error) in
+        let urlSession = URLSession.shared.dataTask(with: urlRequest) { data, urlResponse, error in
             if let _ = error {
                 return
             }
@@ -31,5 +28,4 @@ public struct Networking {
         }
         urlSession.resume()
     }
-
 }
